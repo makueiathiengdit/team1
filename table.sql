@@ -1,0 +1,5 @@
+CREATE TABLE student (
+    ID char(20) PRIMARY KEY,
+    StudentName CHAR(20) NOT NULL,
+    DOB DATETIME NOT NULL
+)

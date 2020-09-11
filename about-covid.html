@@ -4,8 +4,8 @@
 <html>
 <head>
 	
-	      <link rel="stylesheet" type="text/css" href="style.css">
-	  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		  <link rel="stylesheet" type="text/css" href="style.css">
+	 <!-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
       <style >
 	      .padd {
   padding: 20px;
@@ -17,7 +17,8 @@
       		padding: 10;
       		font-family:  'Poppins', sans-serif;
 			background-attachment: fixed;
-			background-color: rgb(212, 37, 37);  
+			background-color: #c2d9fc;
+		  
       	}
       	header
       	{
@@ -74,7 +75,8 @@
       	{
       		background: #069370;
       		color: #fff;
-      		transition: 0,5s;
+			  transition: 0,5s;
+			  text-decoration: none;
 
       	}
       	@media (max-width: 1200px)
@@ -130,12 +132,109 @@
     margin: 5px 5px -55px 6px;
 }
 .boxing {
-  background-color: lightgrey;
+  /*background-color: lightgrey;*/
   width: 100%;
   border: 15px solid green;
   padding: 50px;
   margin: 15px;
-}	      
+  background: transparent;
+  background-image: url('images/coro1.jpg') ;
+  background-position: center;
+  background-size: contain;
+
+}	  
+
+.boxing div{
+	display: inline-block;
+}
+.boxing div img{
+	width: 40%;
+	height: auto;
+	float: right;
+}
+
+.boxing p, h1{
+	
+	color:white;
+}
+
+/*footer style
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+*/
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #093e5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#footer {
+    background: #093e5e !important;
+}
+#footer h5{
+	padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+	padding: 3px 0;
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+	font-size:25px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+	font-size:30px;
+	margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+	color:#ffffff;
+}
+#footer ul.social li a:hover{
+	color:#eeeeee;
+}
+#footer ul.quick-links li{
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+	font-weight:700;
+}
+#footer ul.quick-links li a i{
+	margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+@media (max-width:767px){
+	#footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+}
+
       </style>
 
 	<title>About Covid-19</title>
@@ -144,7 +243,11 @@
 	<meta name="description" content="Find all Coronavirus updates here">
    	<meta name="keywords" content="Coronavirus, Covid-19, Web games,Covid Warriors">
    	<link rel="stylesheet" type="text/css" href="css/about-covid.css">
-   	<link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 	    <header>
@@ -164,7 +267,7 @@
 
 
 
-
+<!--
 <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=
 " crossorigin="anonymous"></script>
 <script type="text/javascript">
@@ -173,9 +276,14 @@
 })
 })
 </script>
+-->
 
-	<div id="firsdiv">
-		  <img src="images/cover.png" height="400px" width="1390px" />
+<div >
+	 <marquee><p>Wash your hands with clean water and soap. Always wear face mask. Avoid crowded places.</p> </marquee>
+</div>
+
+	<div id="firstdiv">
+		  <img src="images/cover.png"/>
 	 </div>
 	<div  class="padd">
 	<div class="coro">
@@ -226,12 +334,14 @@ At this time, there are no specific vaccines or treatments for COVID-19. However
 		</ul>
 		<br>
 		<center>
-		   <button type="button" onclick="show()" class="btn btn-info">Show more Symptoms</button>
+			<a href="https://covid19.who.int/">
+		        <button type="button" class="btn btn-info">Show more Symptoms</button>
+			</a>
 		</center>
 	</div>
 
 		<div class="imagess">
-			<img src="images/symp1.png" alt="Loading"/>                   
+		<!--	<img src="images/symp1.png" alt="Loading"/> -->                  
        </div>
   
 
@@ -276,19 +386,93 @@ At this time, there are no specific vaccines or treatments for COVID-19. However
 	</div>
 </div>
 
+
+<!--Slide show -->
+<div>
+
+
+
+<div class="slideshow-container">
+<h3>Covid-19 Tips</h3>
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="images/tip1.jpg" style="width:100%">
+  <div class="text">Tip 1</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="images/tip2.jpg" style="width:100%">
+  <div class="text">Tip 2</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="images/tip3.jpg" style="width:100%">
+  <div class="text">Tip 3</div>
+</div>
+
+<div class="mySlides fade">
+	<div class="numbertext">4 / 6</div>
+	<img src="images/tip4.jpg" style="width:100%">
+	<div class="text">Tip 4</div>
+  </div>
+
+  <div class="mySlides fade">
+	<div class="numbertext">5 / 6</div>
+	<img src="images/tip5.jpg" style="width:100%">
+	<div class="text">Tip 5</div>
+  </div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+</div>
+
+
+
+</div>
+
 <div class="healthy-lifestyle">
 		<center>	
 			<h2>Living healthy lifestyle during Covid-19</h2>
 			<div>
+				<svg height="14px" width="10px">
+					<circle cx="5px" cy="5px" r="5px" fill="red" />
+					</svg>
 				<span>Do physical exercise for at least 30mins a day</span>
+				<svg height="14px" width="10px">
+					<circle cx="5px" cy="5px" r="5px" fill="red" />
+					</svg>
 				<!--<img src="images/yoga.jpg">-->
 			</div>
 			<div>
+				<svg height="14px" width="10px">
+					<circle cx="5px" cy="5px" r="5px" fill="red" />
+					</svg>
 				<span>Avoid smoking and drinking</span>
+				<svg height="14px" width="10px">
+					<circle cx="5px" cy="5px" r="5px" fill="red" />
+					</svg>
 				<!--<img src="images/nosmoking.png">-->
 			</div>
 			<div>
+				<svg height="14px" width="10px">
+					<circle cx="5px" cy="5px" r="5px" fill="red" />
+					</svg>
 				<span>Eat healthy food</span>
+				<svg height="14px" width="10px">
+					<circle cx="5px" cy="5px" r="5px" fill="red" />
+					</svg>
 				<!--<img src="images/fruits.jpg">-->
 			</div>
 		</center>
@@ -303,40 +487,39 @@ At this time, there are no specific vaccines or treatments for COVID-19. However
 					<h4>What is Covid-19</h4>
 					<span>Can Covid-19 be caught from person with no Symptoms? </span>
 					<a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/q-a-coronaviruses" target="_blank">
-						<img src="images/plus.png"> 
+						<img src="images/plus1.png"> 
 					</a>
 				</div>
 				<div class="QnA">
 					<h4>Tobacco and Covid-19</h4>
 					<span>As a smoker, is my risk of getting Covid-19 virus higher than that of non-smoker?</span>
 					<a href="https://www.who.int/news-room/q-a-detail/q-a-on-tobacco-and-covid-19" target="_blank" >
-						<img src="images/plus.png"> 
+						<img src="images/plus1.png"> 
 					</a>
 				</div>
 				<div class="QnA">
 					<h4>Medical breakthrough</h4>
 					<span>Should i take Dexamethasone to prevent Covid-19?</span>
 					<a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/q-a-dexamethasone-and-covid-19" target="_blank">
-					   <img src="images/plus.png">
+					   <img src="images/plus1.png">
 				    </a>
 				</div>
 				<div class="QnA">
 					<h4>Older people and Covid-19</h4>
 					<span>Are older people at high risk?</span>
 					<a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/q-a-on-on-covid-19-for-older-people" target="_blank">
-					   <img src="images/plus.png">
+					   <img src="images/plus1.png">
 				   </a>
 				</div>
 				<div class="QnA">
 					<h4>Medical breakthrough</h4>
 					<span>Is there vaccine, drug or treatment for Covid-19?</span>
 					<a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/q-a-on-on-covid-19-for-older-people" target="_blank">
-					   <img src="images/plus.png"> 
+					   <img src="images/plus1.png"> 
 					</a>
 				</div>
 		</center>
 
-		
 		
 <div class="pmcares">
 	<Center><H1>Want to Contribute <H1></Center>
@@ -344,7 +527,7 @@ At this time, there are no specific vaccines or treatments for COVID-19. However
 			<p>Fighting Covid-19 demands our collective participation.</p>
 			<p>In order to do so, PMCARES gives you a chance to punch Covid-19 right in the face by donating <b>any amount</b></p>
 			<p>This is the right time to show your patriotism and fulfill your national duties as a citizen</p>
-			<button type="button" class="btn btn-outline-success"><a href="https://www.pmcares.gov.in/en/">Donate</a></button>
+			<button type="button" class="btn btn-outline-success" onclick="countDonation()"><a href="https://www.pmcares.gov.in/en/">Donate</a></button>
 	   </center>
 	   <br>
 		<a href="https://www.pmcares.gov.in/en/"><img src="images/pm.jpg"/></a>
@@ -365,44 +548,60 @@ At this time, there are no specific vaccines or treatments for COVID-19. However
 
 		</div>
 
-<!----------FOOTER SECTION----------->
- <footer class="site-section bg-light footer">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md-3">
-            <h3 class="footer-title">Notice</h3>
-            <p><span class="d-inline-block d-md-block">This website is under development , many upgrades are done daily.</p>
-          </div>
-          <div class="col-md-5 mx-auto">
-            <div class="row">
-             
-              
-     
-            </div>
-          </div>
-          <div class="col-md-3">
-            <h3 class="footer-title">Follow Us</h3>
-            <a href="hhtps://www.facebook.com/" class="social-circle m-2"><span class="icon-facebook"></span></a>
-            <a href="https://www.instagram.com/" class="social-circle m-2"><span class="icon-instagram"></span></a>
-            <a href="#" class="social-circle m-2"><span class="icon-linkedin"></span></a>
-          </div>
-        </div>
 
-        <div class="row">
-          <div class="col-12 text-center">
-            <p>
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                Copyright &copy;
-                <script>
-                  document.write(new Date().getFullYear());
-                </script> All rights reserved |  <i class="icon-heart"
-                  aria-hidden="true"></i> by Covid Warriors
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-              </p>  
-          </div>
-        </div>
-      </div>
-    </footer>
+		<Footer>
+			<section id="footer">
+				<div class="container">
+					<div class="row text-center text-xs-center text-sm-left text-md-left">
+						<div class="col-xs-12 col-sm-4 col-md-4">
+							<h5>Quick links</h5>
+							<ul class="list-unstyled quick-links">
+								<li><a href="index.html"><i class="fa fa-angle-double-right"></i>Home</a></li>
+								<li><a href="about-covid.html"><i class="fa fa-angle-double-right"></i>About Covid </a></li>
+								<li><a href="games.html"><i class="fa fa-angle-double-right"></i>Games</a></li>
+								<li><a href="gallery.html"><i class="fa fa-angle-double-right"></i>Gallery</a></li>
+								<li><a href="about-team.html"><i class="fa fa-angle-double-right"></i>About Team</a></li>
+							</ul>
+						</div>
+						<div class="col-xs-12 col-sm-4 col-md-4">
+							<h5>Legal</h5>
+							<ul class="list-unstyled quick-links">
+								<li><a href=""><i class="fa fa-angle-double-right"></i>Blogs</a></li>
+								<li><a href=""><i class="fa fa-angle-double-right"></i>Legal Notice</a></li>
+						
+							</ul>
+						</div>
+						<div class="col-xs-12 col-sm-4 col-md-4">
+							<h5>Tracker</h5>
+							<ul class="list-unstyled quick-links">
+								<li><a href="indian_tracker.html"><i class="fa fa-angle-double-right"></i>Indian Tracker</a></li>
+								<li><a href="world_tracker.html"><i class="fa fa-angle-double-right"></i>World Tracker</a></li>
+								
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+							<ul class="list-unstyled list-inline social text-center">
+								<li class="list-inline-item"><a href="www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+							
+								<li class="list-inline-item"><a href="www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+								<li class="list-inline-item"><a href="www.googleplus.com/"><i class="fa fa-google-plus"></i></a></li>
+								<li class="list-inline-item"><a href="www.gmail.com/" target="_blank"><i class="fa fa-envelope"></i></a></li>
+							</ul>
+						</div>
+						<hr>
+					</div>	
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+							
+							<p class="h6">Covid Warriors | All right Reversed<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">2020</a></p>
+						</div>
+						<hr>
+					</div>	
+				</div>
+			</section>
+			</Footer>
 
   </div> <!-- .site-wrap -->
 
@@ -417,8 +616,39 @@ At this time, there are no specific vaccines or treatments for COVID-19. However
   <script src="js/jquery.sticky.js"></script>
   <script src="js/isotope.pkgd.min.js"></script>
   <script src="js/about-covid.js"></script>
-
-  
   <script src="js/main.js"></script>
+
+
+
+
+  <script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+	
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+	
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+	
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+		  slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+		  dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	}
+	</script>
+	
 </body>
 </html>
